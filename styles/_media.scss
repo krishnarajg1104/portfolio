@@ -1,0 +1,122 @@
+@media screen and (max-width: 600px){
+    .section{
+        padding: 2rem 2.5rem;
+        min-height: 100vh;
+    }
+
+    header{
+        padding: 0;
+        margin-bottom: 5rem;
+        .right{
+            grid-row: 1;
+            padding: 0 !important;
+            width: 90%;
+            margin: 0 auto;
+            .name{
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+
+    .h-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+        .left{
+            .image{
+                margin: 0 auto;
+                width: 90%;                
+            }
+        }
+    }
+
+    .left{
+        .shape{
+            display: none;
+        }
+    }
+
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        .rightAbout{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .leftAbout{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .aboutStats{
+        .proBars{
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+        }
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .timeline{
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+    }
+
+    .contactContent{
+        flex-direction: column;
+        padding-bottom: 6rem;
+        .rightContent{
+            margin: 0;
+            .control2{
+                flex-direction: column;
+                :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        .leftContent{
+            .contactIcon{
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--GRAY5);
+        .control{
+            margin: 1rem 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .about, .workexp{
+        padding: 5rem;
+    }
+    .contactContent{
+        flex-direction: column;
+        padding-bottom: 6rem;
+        .rightContent{
+            margin: 0;
+            .control2{
+                flex-direction: column;
+                :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
